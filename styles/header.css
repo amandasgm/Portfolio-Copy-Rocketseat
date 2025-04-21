@@ -10,6 +10,20 @@ header{
   background-position: center;
   gap: 56px;
 
+  #seta{
+    background-image: url(../assets/icons/CaretDoubleDowndefault.svg);
+    width: 32px;
+    height: 32px;
+
+    &:hover{ /* quando o mouse passa sobre o botão, troca o ícone do span */
+      background-image: url(../assets/icons/CaretDoubleDown.svg);
+      cursor: pointer;
+      transition: 0.8s;
+    }
+  }
+
+  
+  
   #datos{
     display: flex;
     flex-direction: column;
@@ -27,6 +41,12 @@ header{
         color: var(--red);
       }
     }
-    
   }
+    #lenguages{
+      display: flex;
+      gap: 16px;
+
+      #html{color: var(--red);}
+    }
+
 }
